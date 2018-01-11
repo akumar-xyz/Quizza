@@ -1,0 +1,380 @@
+
+/*  Purple color scheme  */
+/* :root{ */
+/* 	--accent : #393143; */
+/* 	--accent_contrast : #968ea1; */
+/* 	--bg-color : #c193fd; */
+/* 	--accent_compliment : #617ec1; */
+/* } */
+
+/* Blue color scheme */
+/* :root{ */
+/* 	--accent : #505061; */
+/* 	--accent_contrast : #ccc; */
+/* 	--bg-color : #526ab4; */
+/* 	--accent_compliment : #9199cb; */
+/* } */
+
+
+/* Blue (another) :P */
+:root{
+	--accent : #3a4047;
+	--accent_contrast : #ffffff;
+	--bg-color : #abc9ed;
+	--accent_compliment : #a5edd9;
+}
+
+/* Blue 2 color scheme */
+/* :root{ */
+/* 	--accent : #4e5862; */
+/* 	--accent_contrast : #ffffff; */
+/* 	--bg-color : #c5dff9; */
+/* 	--accent_compliment : #c1f9e3; */
+/* } */
+
+
+/* You just lost The Game */
+/* :root{ */
+/* 	--accent : #395261; */
+/* 	--accent_contrast : #ffffff; */
+/* 	--bg-color : #87cffa; */
+/* 	--accent_compliment : #81fbbd; */
+/* } */
+
+/* Yellow color scheme */
+/* :root{ */
+/* 	--accent : #332321; */
+/* 	--accent_contrast : #c7b3a9; */
+/* 	--bg-color : #ffcf64; */
+/* 	--accent_compliment : #ff9a64; */
+/* } */
+
+/* Green color scheme */
+/* :root{ */
+/* 	--accent : #3f4b2e; */
+/* 	--accent_contrast : #b3c29d; */
+/* 	--bg-color : #b0ea5c; */
+/* 	--accent_compliment : #fff764; */
+/* } */
+
+body{
+	background-color: var(--bg-color);
+	color: var(--accent_contrast);
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 10% ;
+}
+
+
+a{
+	color: var(--accent_compliment);
+}
+button {
+	background-color: var(--accent_compliment);
+	color: var(--accent_contrast);
+	border: 2px solid var(--accent_compliment);
+	font-weight: bold;
+	padding: 14px 20px;
+	margin: 8px 0;
+	cursor: pointer;
+	border-radius: 8px;
+}
+button:hover {
+	opacity: 0.7;
+}
+
+.container > input{
+	padding: 12px 20px;
+	margin: 10px 0px;
+	display: block;
+	border: 2px solid var(--accent_contrast);
+	border-radius: 8px;
+	background: var(--accent);
+	color: var(--accent_contrast);
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* .container > label{ */
+/* 	padding: 0; */
+/* 	margin: 0; */
+/* } */
+
+.container > textarea{
+	padding: 12px 20px;
+	/* margin: 8px 10px; */
+	margin: 10px 3px 10px 3px;
+	display: block;
+	border: 2px solid var(--accent_contrast);
+	border-radius: 8px;
+	background: var(--accent);
+	color: var(--accent_contrast);
+}
+.container > input::placeholder {
+	color: var(--accent_contrast);
+}
+.container > select{
+	background: var(--accent);
+	color: var(--accent_contrast);
+	border: 2px solid var(--accent_contrast);
+	display: block;
+	margin: 10px 0px;
+	padding: 12px 20px;
+	display: block;
+	border-radius: 8px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.container > form{
+	display: inline;
+	/* bold: true; */
+}
+
+.container > button {
+	background-color: var(--accent);
+	color: var(--accent_contrast);
+	border: 2px solid var(--accent_contrast);
+	font-weight: bold;
+	/* padding: 14px 20px; */
+	/* margin: 8px 0; */
+	cursor: pointer;
+	border-radius: 8px;
+}
+
+/* Add a hover effect for buttons */
+.container > button:hover {
+	opacity: 0.8;
+	background-color: var(--bg-color);
+}
+
+.container > a{
+	color: var(--accent_compliment);
+	display: block;
+	margin : 5px 5px 5px 5px;
+	padding: 10px;
+
+}
+
+.container > em{
+	color: var(--accent_compliment);
+}
+.focused{
+	margin: auto;
+	margin-top: 10px;
+	position: relative;
+	top:20;
+	overflow: auto;
+	/* bottom: 50%; */
+	/* left: 50%; */
+	/* right: 50%; */
+	display: block;
+	/* flex-shrink: 0; */
+}
+
+.question{
+	/* width: 80%; */
+	height: 50%
+}
+
+.container > table{
+	/* border: 0px hidden; */
+	color: var(--accent_contrast);
+	/* border-color: var(--accent); */
+	border-collapse: collapse;
+	/* border-radius: 5px; */
+	text-align: left;
+}
+
+.container tr,td, th{
+	/* border-color: var(--accent); */
+	/* border: 0px hidden; */
+	vertical-align: middle;
+	margin: 10px;
+	padding: 10px;
+	opacity: 0.85;
+	border-bottom: 1px solid;
+}
+
+.container tr:hover{
+	opacity: 1.0;
+}
+
+label{
+	display: block;
+	padding: 5px;
+	margin: 10px;
+}
+
+/* .container */ 
+.container {
+	background: var(--accent);
+	color: var(--accent_contrast);
+	display: table;
+	padding: 16px;
+	text-align: center;
+	/* margin-top: 30px; */
+	/* border: 3px solid; */
+}
+
+/* Add shadows to create the "card" effect */
+.card {
+    text-align: center;
+    /* align-content: center; */
+    /* align-self: center; */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+	span.psw {
+		display: block;
+		float: none;
+	}
+	.cancelbtn {
+		width: 100%;
+	}
+} 
+
+.options {
+	width: 100%;
+	vertical-align: center;
+	/* margin: 0px 5px 0px 0px; */
+	font-weight: bold;
+	/* padding: 5px; */
+}
+
+.options ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
+
+.options li{
+	display: block;
+}
+
+
+/* Style the links inside the navigation bar */
+.options a {
+	float: center;
+	display: block;
+	color: var(--accent_compliment);
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+}
+
+.information {
+	margin-top: 30px;
+	float: none;
+}
+
+.information > table{
+	/* border: 3px solid; */
+	/* border-collapse: collapse; */
+	/* padding 15px; */
+	/* margin: 10px; */
+	border-top-color: var(--accent_compliment);
+	border-bottom-color: var(--accent_compliment);
+	border-left-color: var(--accent_compliment);
+	border-right-color: var(--accent_compliment);
+	border-radius: 5px;
+	text-align: left;
+}
+
+.information  tr{
+	border-color: var(--accent_compliment);
+	/* border: 2px solid; */
+	padding: 10px;
+	vertical-align: middle;
+}
+
+.information  td{
+	/* border: 2px solid; */
+	/* border-bottom-width: thick; */
+	padding: 10px;
+	vertical-align: middle;
+	/* border-color: var(--accent_compliment); */
+}
+
+
+/* Change the color of links on hover */
+.options a:hover {
+	color: var(--accent_contrast);
+}
+
+#questionpaper {
+    width: 50%;
+}
+
+/* styling for the navbar */
+nav {
+	background-color: var(--accent);
+	overflow: hidden;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	vertical-align: center;
+	margin: 0px 5px 0px 0px;
+	/* font-weight: bold; */
+	/* padding: 5px; */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+} 
+
+nav li{
+	float: right;
+	display: inline-block;
+}
+
+
+/* nav li:before{ */
+/*     content: "_"; */
+/*     padding: 0 10px; */
+/* } */
+
+/* Style the links inside the navigation bar */
+nav a {
+	float: right;
+	display: block;
+	color: var(--accent_compliment);
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+	color: var(--accent_contrast);
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+	background-color: var(--accent);
+	color: var(--accent_compliment);
+}
+
+.nav button {
+	background-color: var(--accent_compliment);
+	color: var(--accent_contrast);
+	border: 2px solid var(--accent_compliment);
+	font-weight: bold;
+	padding: 10px 8px;
+	cursor: pointer;
+	border-radius: 8px;
+}
